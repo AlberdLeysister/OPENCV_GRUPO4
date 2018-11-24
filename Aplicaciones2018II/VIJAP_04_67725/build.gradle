@@ -1,0 +1,30 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+        //maven { url 'https://dl.google.com/dl/android/maven2/com/android/tools/lint/lint-gradle-api/26.1.2/lint-gradle-api-26.1.2.jar' }
+        repositories {
+            google()
+            maven { url 'https://maven.fabric.io/public' }
+            mavenCentral()
+            jcenter()
+        }
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.1'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        maven { url 'https://maven.fabric.io/public' }
+        mavenCentral()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

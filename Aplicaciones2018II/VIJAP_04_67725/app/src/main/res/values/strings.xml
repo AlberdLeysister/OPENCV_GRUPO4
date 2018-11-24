@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Detect-Things</string>
+    <string name="action_settings">Configuracion</string>
+    <string name="title_activity_login">Iniciar</string>
+    <string name="title_activity_recognize">Reconocimiento Texto</string>
+    <string name="text_btn_exit">Salir</string>
+    <string name="text_btn_camera">Camara</string>
+    <string name="text_btn_login">Iniciar</string>
+    <string name="text_btn_take_pic">Tomar Foto</string>
+    <string name="text_hint_result">Resultados</string>
+    <string name="text_lb_select_language">Seleccionar Opcion</string>
+    <string-array name="language_array">
+        <item>Español</item>
+    </string-array>
+    <string-array name="threshold_array">
+        <item>85</item>
+        <item>100</item>
+        <item>125</item>
+        <item>150</item>
+    </string-array>
+</resources>

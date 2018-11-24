@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    android:padding="48dp"
+    tools:context=".Menu">
+
+
+    <ImageView
+        android:id="@+id/Reconocimiento_texto"
+        android:layout_width="106dp"
+        android:layout_height="72dp"
+
+        android:layout_alignTop="@+id/textView1"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_alignRight="@+id/textView3"
+        android:onClick="ReconocimientoTexto"
+        android:src="@drawable/ic_launcher" />
+
+
+    <ImageView
+        android:id="@+id/medidor_distancia"
+        android:layout_width="136dp"
+        android:layout_height="124dp"
+
+
+        android:layout_below="@+id/Reconocimiento_texto"
+        android:layout_alignLeft="@+id/Reconocimiento_texto"
+        android:layout_marginTop="44dp"
+        android:onClick="MedidorDistancia"
+        android:src="@android:drawable/ic_menu_compass"
+        tools:src="@drawable/cinta" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="159dp"
+        android:layout_height="84dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="119dp"
+        android:layout_marginEnd="23dp"
+
+        android:layout_marginRight="23dp"
+        android:cursorVisible="false"
+        android:text="Detector de Texto"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/recorte"
+        android:layout_width="138dp"
+        android:layout_height="111dp"
+
+
+        android:layout_alignLeft="@+id/Reconocimiento_texto"
+        android:layout_alignTop="@+id/textView"
+
+        android:layout_marginTop="-30dp"
+        android:onClick="Recorte"
+        android:src="@android:drawable/ic_menu_crop" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="138dp"
+        android:layout_height="71dp"
+
+        android:layout_below="@+id/medidor_distancia"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_marginTop="50dp"
+        android:text="Recorte de Color"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="114dp"
+
+        android:layout_alignStart="@+id/textView1"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginBottom="159dp"
+        android:text="Calcular Distancia"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:lineSpacingExtra="36sp"
+        android:text="MENU PRINCIPAL"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorLink="@color/colorPrimaryDark"
+        android:textStyle="bold|italic" />
+</RelativeLayout>
